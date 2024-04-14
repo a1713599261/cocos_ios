@@ -1,0 +1,851 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E548E6672BC80F03004FD8BA /* data in Resources */ = {isa = PBXBuildFile; fileRef = E548E6662BC80F03004FD8BA /* data */; };
+		E5FB62882BC6DDC300D36088 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = E5FB62872BC6DDC300D36088 /* AppDelegate.mm */; };
+		E5FB628B2BC6DDC300D36088 /* SceneDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = E5FB628A2BC6DDC300D36088 /* SceneDelegate.mm */; };
+		E5FB628E2BC6DDC300D36088 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = E5FB628D2BC6DDC300D36088 /* ViewController.mm */; };
+		E5FB62912BC6DDC300D36088 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5FB628F2BC6DDC300D36088 /* Main.storyboard */; };
+		E5FB62932BC6DDC500D36088 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5FB62922BC6DDC500D36088 /* Assets.xcassets */; };
+		E5FB62962BC6DDC500D36088 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5FB62942BC6DDC500D36088 /* LaunchScreen.storyboard */; };
+		E5FB62992BC6DDC500D36088 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = E5FB62982BC6DDC500D36088 /* main.mm */; };
+		E5FB62B12BC6DE3900D36088 /* libboost_container.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E5FB62A12BC6DE3900D36088 /* libboost_container.a */; };
+		E5FB62B32BC6DE3900D36088 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E5FB62A72BC6DE3900D36088 /* Game.cpp */; };
+		E5FB62B72BC6DE3900D36088 /* SDKWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = E5FB62AE2BC6DE3900D36088 /* SDKWrapper.m */; };
+		E5FB62B82BC6DE3900D36088 /* libcocos_engine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E5FB62B02BC6DE3900D36088 /* libcocos_engine.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E548E6662BC80F03004FD8BA /* data */ = {isa = PBXFileReference; lastKnownFileType = folder; name = data; path = /Users/chenyi/Desktop/cocos_project/iosdemo2/data; sourceTree = "<absolute>"; };
+		E5FB62832BC6DDC300D36088 /* iosdemo2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosdemo2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5FB62862BC6DDC300D36088 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E5FB62872BC6DDC300D36088 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		E5FB62892BC6DDC300D36088 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		E5FB628A2BC6DDC300D36088 /* SceneDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SceneDelegate.mm; sourceTree = "<group>"; };
+		E5FB628C2BC6DDC300D36088 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E5FB628D2BC6DDC300D36088 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		E5FB62902BC6DDC300D36088 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E5FB62922BC6DDC500D36088 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E5FB62952BC6DDC500D36088 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E5FB62972BC6DDC500D36088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5FB62982BC6DDC500D36088 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		E5FB62A12BC6DE3900D36088 /* libboost_container.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libboost_container.a; sourceTree = "<group>"; };
+		E5FB62A52BC6DE3900D36088 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		E5FB62A72BC6DE3900D36088 /* Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
+		E5FB62A82BC6DE3900D36088 /* cocos-version.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "cocos-version.json"; sourceTree = "<group>"; };
+		E5FB62A92BC6DE3900D36088 /* xr.cmake */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = xr.cmake; sourceTree = "<group>"; };
+		E5FB62AA2BC6DE3900D36088 /* localCfg.cmake */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = localCfg.cmake; sourceTree = "<group>"; };
+		E5FB62AB2BC6DE3900D36088 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		E5FB62AD2BC6DE3900D36088 /* SDKWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDKWrapper.h; sourceTree = "<group>"; };
+		E5FB62AE2BC6DE3900D36088 /* SDKWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDKWrapper.m; sourceTree = "<group>"; };
+		E5FB62B02BC6DE3900D36088 /* libcocos_engine.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcocos_engine.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E5FB62802BC6DDC300D36088 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5FB62B12BC6DE3900D36088 /* libboost_container.a in Frameworks */,
+				E5FB62B82BC6DE3900D36088 /* libcocos_engine.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E5FB627A2BC6DDC300D36088 = {
+			isa = PBXGroup;
+			children = (
+				E5FB62852BC6DDC300D36088 /* iosdemo2 */,
+				E5FB62842BC6DDC300D36088 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E5FB62842BC6DDC300D36088 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E5FB62832BC6DDC300D36088 /* iosdemo2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E5FB62852BC6DDC300D36088 /* iosdemo2 */ = {
+			isa = PBXGroup;
+			children = (
+				E5FB629F2BC6DE3900D36088 /* cocos */,
+				E5FB62862BC6DDC300D36088 /* AppDelegate.h */,
+				E5FB62872BC6DDC300D36088 /* AppDelegate.mm */,
+				E5FB62892BC6DDC300D36088 /* SceneDelegate.h */,
+				E5FB628A2BC6DDC300D36088 /* SceneDelegate.mm */,
+				E5FB628C2BC6DDC300D36088 /* ViewController.h */,
+				E5FB628D2BC6DDC300D36088 /* ViewController.mm */,
+				E5FB628F2BC6DDC300D36088 /* Main.storyboard */,
+				E5FB62922BC6DDC500D36088 /* Assets.xcassets */,
+				E5FB62942BC6DDC500D36088 /* LaunchScreen.storyboard */,
+				E5FB62972BC6DDC500D36088 /* Info.plist */,
+				E5FB62982BC6DDC500D36088 /* main.mm */,
+			);
+			path = iosdemo2;
+			sourceTree = "<group>";
+		};
+		E5FB629F2BC6DE3900D36088 /* cocos */ = {
+			isa = PBXGroup;
+			children = (
+				E548E6662BC80F03004FD8BA /* data */,
+				E5FB62A02BC6DE3900D36088 /* cocos_container */,
+				E5FB62A22BC6DE3900D36088 /* native */,
+				E5FB62AB2BC6DE3900D36088 /* Game.h */,
+				E5FB62AC2BC6DE3900D36088 /* service */,
+				E5FB62AF2BC6DE3900D36088 /* cocos_engine */,
+			);
+			path = cocos;
+			sourceTree = "<group>";
+		};
+		E5FB62A02BC6DE3900D36088 /* cocos_container */ = {
+			isa = PBXGroup;
+			children = (
+				E5FB62A12BC6DE3900D36088 /* libboost_container.a */,
+			);
+			path = cocos_container;
+			sourceTree = "<group>";
+		};
+		E5FB62A22BC6DE3900D36088 /* native */ = {
+			isa = PBXGroup;
+			children = (
+				E5FB62A32BC6DE3900D36088 /* engine */,
+			);
+			path = native;
+			sourceTree = "<group>";
+		};
+		E5FB62A32BC6DE3900D36088 /* engine */ = {
+			isa = PBXGroup;
+			children = (
+				E5FB62A42BC6DE3900D36088 /* common */,
+			);
+			path = engine;
+			sourceTree = "<group>";
+		};
+		E5FB62A42BC6DE3900D36088 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				E5FB62A52BC6DE3900D36088 /* CMakeLists.txt */,
+				E5FB62A62BC6DE3900D36088 /* Classes */,
+				E5FB62A82BC6DE3900D36088 /* cocos-version.json */,
+				E5FB62A92BC6DE3900D36088 /* xr.cmake */,
+				E5FB62AA2BC6DE3900D36088 /* localCfg.cmake */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		E5FB62A62BC6DE3900D36088 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E5FB62A72BC6DE3900D36088 /* Game.cpp */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		E5FB62AC2BC6DE3900D36088 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				E5FB62AD2BC6DE3900D36088 /* SDKWrapper.h */,
+				E5FB62AE2BC6DE3900D36088 /* SDKWrapper.m */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
+		E5FB62AF2BC6DE3900D36088 /* cocos_engine */ = {
+			isa = PBXGroup;
+			children = (
+				E5FB62B02BC6DE3900D36088 /* libcocos_engine.a */,
+			);
+			path = cocos_engine;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E5FB62822BC6DDC300D36088 /* iosdemo2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5FB629C2BC6DDC500D36088 /* Build configuration list for PBXNativeTarget "iosdemo2" */;
+			buildPhases = (
+				E5FB627F2BC6DDC300D36088 /* Sources */,
+				E5FB62802BC6DDC300D36088 /* Frameworks */,
+				E5FB62812BC6DDC300D36088 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iosdemo2;
+			productName = iosdemo2;
+			productReference = E5FB62832BC6DDC300D36088 /* iosdemo2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E5FB627B2BC6DDC300D36088 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					E5FB62822BC6DDC300D36088 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = E5FB627E2BC6DDC300D36088 /* Build configuration list for PBXProject "iosdemo2" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E5FB627A2BC6DDC300D36088;
+			productRefGroup = E5FB62842BC6DDC300D36088 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E5FB62822BC6DDC300D36088 /* iosdemo2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E5FB62812BC6DDC300D36088 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E548E6672BC80F03004FD8BA /* data in Resources */,
+				E5FB62962BC6DDC500D36088 /* LaunchScreen.storyboard in Resources */,
+				E5FB62932BC6DDC500D36088 /* Assets.xcassets in Resources */,
+				E5FB62912BC6DDC300D36088 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E5FB627F2BC6DDC300D36088 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5FB628E2BC6DDC300D36088 /* ViewController.mm in Sources */,
+				E5FB62882BC6DDC300D36088 /* AppDelegate.mm in Sources */,
+				E5FB62B72BC6DE3900D36088 /* SDKWrapper.m in Sources */,
+				E5FB62992BC6DDC500D36088 /* main.mm in Sources */,
+				E5FB628B2BC6DDC300D36088 /* SceneDelegate.mm in Sources */,
+				E5FB62B32BC6DE3900D36088 /* Game.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E5FB628F2BC6DDC300D36088 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E5FB62902BC6DDC300D36088 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E5FB62942BC6DDC500D36088 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E5FB62952BC6DDC500D36088 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E5FB629A2BC6DDC500D36088 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E5FB629B2BC6DDC500D36088 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E5FB629D2BC6DDC500D36088 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = NO;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = NO;
+				CLANG_WARN_SUSPICIOUS_MOVE = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 2ZL9J7P4ZF;
+				ENABLE_TESTABILITY = NO;
+				ENABLE_TESTING_SEARCH_PATHS = NO;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'GAME_NAME=\"ProjectNormal\"'",
+					"'CC_PLATFORM_WINDOWS=2'",
+					"'CC_PLATFORM_MACOS=4'",
+					"'CC_PLATFORM_IOS=1'",
+					"'CC_PLATFORM_MAC_OSX=4'",
+					"'CC_PLATFORM_MAC_IOS=1'",
+					"'CC_PLATFORM_ANDROID=3'",
+					"'CC_PLATFORM_OHOS=5'",
+					"'CC_PLATFORM_LINUX=6'",
+					"'CC_PLATFORM_QNX=7'",
+					"'CC_PLATFORM_NX=8'",
+					"'CC_PLATFORM_EMSCRIPTEN=9'",
+					"'CC_PLATFORM=1'",
+					"'CC_NETMODE_CLIENT=0'",
+					"'CC_NETMODE_LISTEN_SERVER=1'",
+					"'CC_NETMODE_HOST_SERVER=2'",
+					"'CC_NETMODE=0'",
+					"'BOOST_ALL_NO_LIB=1'",
+					"'CC_USE_VIDEO=1'",
+					"'CC_USE_WEBVIEW=1'",
+					"'CC_USE_AUDIO=1'",
+					"'CC_USE_XR=0'",
+					"'CC_USE_XR_REMOTE_PREVIEW=0'",
+					"'CC_USE_SOCKET=1'",
+					"'CC_USE_WEBSOCKET_SERVER=0'",
+					"'CC_USE_EDITBOX=1'",
+					"'USE_V8_DEBUGGER=0'",
+					"'CC_USE_MIDDLEWARE=1'",
+					"'CC_USE_SPINE=1'",
+					"'CC_USE_DRAGONBONES=1'",
+					"'CC_USE_JOB_SYSTEM_TBB=0'",
+					"'CC_USE_JOB_SYSTEM_TASKFLOW=0'",
+					"'CC_USE_PHYSICS_PHYSX=0'",
+					"'CC_USE_AR_MODULE=0'",
+					"'CC_USE_AR_AUTO=0'",
+					"'CC_USE_AR_CORE=0'",
+					"'CC_USE_AR_ENGINE=0'",
+					"'CC_USE_OCCLUSION_QUERY=0'",
+					"'CC_USE_DEBUG_RENDERER=0'",
+					"'CC_USE_GEOMETRY_RENDERER=0'",
+					"'CC_USE_WEBP=1'",
+					"'CC_EDITOR=0'",
+					CC_USE_METAL,
+					BOOST_CONTAINER_NO_LIB,
+					BOOST_CONTAINER_STATIC_LINK,
+					BOOST_UUID_FORCE_AUTO_LINK,
+					"'V8_TYPED_ARRAY_MAX_SIZE_IN_HEAP=64'",
+					ENABLE_MINOR_MC,
+					ENABLE_HANDLE_ZAPPING,
+					V8_ATOMIC_OBJECT_FIELD_WRITES,
+					V8_ATOMIC_MARKING_STATE,
+					V8_ENABLE_LAZY_SOURCE_POSITIONS,
+					V8_SHARED_RO_HEAP,
+					V8_WIN64_UNWINDING_INFO,
+					V8_ENABLE_REGEXP_INTERPRETER_THREADED_DISPATCH,
+					V8_SNAPSHOT_COMPRESSION,
+					V8_ENABLE_SYSTEM_INSTRUMENTATION,
+					V8_ENABLE_WEBASSEMBLY,
+					V8_DEPRECATION_WARNINGS,
+					V8_IMMINENT_DEPRECATION_WARNINGS,
+					CPPGC_CAGED_HEAP,
+					V8_TARGET_ARCH_ARM64,
+					V8_HAVE_TARGET_OS,
+					V8_TARGET_OS_IOS,
+					DISABLE_UNTRUSTED_CODE_MITIGATIONS,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/sources,
+					/Users/chenyi/Desktop/cocos_project/ProjectNormal/native/engine/ios/../common/Classes,
+					/Users/chenyi/Desktop/cocos_project/ProjectNormal/native/engine/ios/service,
+					/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/sources/SocketRocket,
+					/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/ios/include,
+					/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native,
+					/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/cocos,
+					/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/cocos/renderer,
+					/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/cocos/platform,
+					/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/cocos/renderer/core,
+					"/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/cocos/editor-support",
+					/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/cocos/bindings/jswrapper,
+					/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/sources/khronos,
+					/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/cocos/platform/ios,
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = iosdemo2/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iosdemo2/cocos/cocos_container",
+					"$(PROJECT_DIR)/iosdemo2/cocos/cocos_engine",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_CPLUSPLUSFLAGS = "'-std=c++17'";
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"-liconv",
+					"-framework",
+					AudioToolbox,
+					"-framework",
+					Foundation,
+					"-framework",
+					OpenAL,
+					"-framework",
+					GameController,
+					"-framework",
+					Metal,
+					"-framework",
+					MetalKit,
+					"-framework",
+					QuartzCore,
+					"-framework",
+					MetalPerformanceShaders,
+					"-lsqlite3",
+					"-framework",
+					Security,
+					"-framework",
+					SystemConfiguration,
+					"$(inherited)",
+					"-framework",
+					QuartzCore,
+					"-framework",
+					MetalPerformanceShaders,
+					"-lsqlite3",
+					"-framework",
+					Security,
+					"-framework",
+					SystemConfiguration,
+					"$(inherited)",
+					/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/ios/libs/libssl.a,
+					/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/ios/libs/libcrypto.a,
+					/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/ios/libs/libjpeg.a,
+					/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/ios/libs/libpng.a,
+					/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/ios/libs/libwebp.a,
+					/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/ios/libs/glslang/libglslang.a,
+					"/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/ios/libs/glslang/libglslang-default-resource-limits.a",
+					/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/ios/libs/glslang/libMachineIndependent.a,
+					/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/ios/libs/glslang/libOGLCompiler.a,
+					/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/ios/libs/glslang/libOSDependent.a,
+					/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/ios/libs/glslang/libSPIRV.a,
+					"/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/ios/libs/glslang/libSPIRV-Tools-opt.a",
+					"/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/ios/libs/glslang/libSPIRV-Tools.a",
+					/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/ios/libs/glslang/libGenericCodeGen.a,
+					"/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/ios/libs/spirv-cross/libspirv-cross-core.a",
+					"/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/ios/libs/spirv-cross/libspirv-cross-glsl.a",
+					"/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/ios/libs/spirv-cross/libspirv-cross-msl.a",
+					/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/ios/libs/libtbb_static.a,
+					/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/ios/libs/libv8_monolith.a,
+					/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/ios/libs/libuv_a.a,
+					"-framework",
+					UIKit,
+					"-framework",
+					AVKit,
+					"-framework",
+					WebKit,
+					"-framework",
+					CoreVideo,
+					"-framework",
+					CoreMotion,
+					"-framework",
+					CFNetwork,
+					"-framework",
+					CoreMedia,
+					"-framework",
+					CoreText,
+					"-framework",
+					CoreGraphics,
+					"-framework",
+					AVFoundation,
+					"-lz",
+					"-framework",
+					OpenGLES,
+					"-framework",
+					JavaScriptCore,
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ty.ta;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SYSTEM_HEADER_SEARCH_PATHS = (
+					/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/ios/include/v8,
+					/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/ios/include/uv,
+					"$(inherited)",
+				);
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		E5FB629E2BC6DDC500D36088 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = NO;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = NO;
+				CLANG_WARN_SUSPICIOUS_MOVE = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 2ZL9J7P4ZF;
+				ENABLE_TESTABILITY = NO;
+				ENABLE_TESTING_SEARCH_PATHS = NO;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'GAME_NAME=\"ProjectNormal\"'",
+					"'CC_PLATFORM_WINDOWS=2'",
+					"'CC_PLATFORM_MACOS=4'",
+					"'CC_PLATFORM_IOS=1'",
+					"'CC_PLATFORM_MAC_OSX=4'",
+					"'CC_PLATFORM_MAC_IOS=1'",
+					"'CC_PLATFORM_ANDROID=3'",
+					"'CC_PLATFORM_OHOS=5'",
+					"'CC_PLATFORM_LINUX=6'",
+					"'CC_PLATFORM_QNX=7'",
+					"'CC_PLATFORM_NX=8'",
+					"'CC_PLATFORM_EMSCRIPTEN=9'",
+					"'CC_PLATFORM=1'",
+					"'CC_NETMODE_CLIENT=0'",
+					"'CC_NETMODE_LISTEN_SERVER=1'",
+					"'CC_NETMODE_HOST_SERVER=2'",
+					"'CC_NETMODE=0'",
+					"'BOOST_ALL_NO_LIB=1'",
+					"'CC_USE_VIDEO=1'",
+					"'CC_USE_WEBVIEW=1'",
+					"'CC_USE_AUDIO=1'",
+					"'CC_USE_XR=0'",
+					"'CC_USE_XR_REMOTE_PREVIEW=0'",
+					"'CC_USE_SOCKET=1'",
+					"'CC_USE_WEBSOCKET_SERVER=0'",
+					"'CC_USE_EDITBOX=1'",
+					"'USE_V8_DEBUGGER=0'",
+					"'CC_USE_MIDDLEWARE=1'",
+					"'CC_USE_SPINE=1'",
+					"'CC_USE_DRAGONBONES=1'",
+					"'CC_USE_JOB_SYSTEM_TBB=0'",
+					"'CC_USE_JOB_SYSTEM_TASKFLOW=0'",
+					"'CC_USE_PHYSICS_PHYSX=0'",
+					"'CC_USE_AR_MODULE=0'",
+					"'CC_USE_AR_AUTO=0'",
+					"'CC_USE_AR_CORE=0'",
+					"'CC_USE_AR_ENGINE=0'",
+					"'CC_USE_OCCLUSION_QUERY=0'",
+					"'CC_USE_DEBUG_RENDERER=0'",
+					"'CC_USE_GEOMETRY_RENDERER=0'",
+					"'CC_USE_WEBP=1'",
+					"'CC_EDITOR=0'",
+					CC_USE_METAL,
+					BOOST_CONTAINER_NO_LIB,
+					BOOST_CONTAINER_STATIC_LINK,
+					BOOST_UUID_FORCE_AUTO_LINK,
+					"'V8_TYPED_ARRAY_MAX_SIZE_IN_HEAP=64'",
+					ENABLE_MINOR_MC,
+					ENABLE_HANDLE_ZAPPING,
+					V8_ATOMIC_OBJECT_FIELD_WRITES,
+					V8_ATOMIC_MARKING_STATE,
+					V8_ENABLE_LAZY_SOURCE_POSITIONS,
+					V8_SHARED_RO_HEAP,
+					V8_WIN64_UNWINDING_INFO,
+					V8_ENABLE_REGEXP_INTERPRETER_THREADED_DISPATCH,
+					V8_SNAPSHOT_COMPRESSION,
+					V8_ENABLE_SYSTEM_INSTRUMENTATION,
+					V8_ENABLE_WEBASSEMBLY,
+					V8_DEPRECATION_WARNINGS,
+					V8_IMMINENT_DEPRECATION_WARNINGS,
+					CPPGC_CAGED_HEAP,
+					V8_TARGET_ARCH_ARM64,
+					V8_HAVE_TARGET_OS,
+					V8_TARGET_OS_IOS,
+					DISABLE_UNTRUSTED_CODE_MITIGATIONS,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/sources,
+					/Users/chenyi/Desktop/cocos_project/ProjectNormal/native/engine/ios/../common/Classes,
+					/Users/chenyi/Desktop/cocos_project/ProjectNormal/native/engine/ios/service,
+					/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/sources/SocketRocket,
+					/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/ios/include,
+					/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native,
+					/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/cocos,
+					/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/cocos/renderer,
+					/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/cocos/platform,
+					/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/cocos/renderer/core,
+					"/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/cocos/editor-support",
+					/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/cocos/bindings/jswrapper,
+					/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/sources/khronos,
+					/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/cocos/platform/ios,
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = iosdemo2/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iosdemo2/cocos/cocos_container",
+					"$(PROJECT_DIR)/iosdemo2/cocos/cocos_engine",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=c++17'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-headerpad_max_install_names",
+					"-liconv",
+					"-framework",
+					AudioToolbox,
+					"-framework",
+					Foundation,
+					"-framework",
+					OpenAL,
+					"-framework",
+					GameController,
+					"-framework",
+					Metal,
+					"-framework",
+					MetalKit,
+					"-framework",
+					QuartzCore,
+					"-framework",
+					MetalPerformanceShaders,
+					"-lsqlite3",
+					"-framework",
+					Security,
+					"-framework",
+					SystemConfiguration,
+					"$(inherited)",
+					"-framework",
+					QuartzCore,
+					"-framework",
+					MetalPerformanceShaders,
+					"-lsqlite3",
+					"-framework",
+					Security,
+					"-framework",
+					SystemConfiguration,
+					"$(inherited)",
+					/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/ios/libs/libssl.a,
+					/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/ios/libs/libcrypto.a,
+					/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/ios/libs/libjpeg.a,
+					/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/ios/libs/libpng.a,
+					/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/ios/libs/libwebp.a,
+					/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/ios/libs/glslang/libglslang.a,
+					"/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/ios/libs/glslang/libglslang-default-resource-limits.a",
+					/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/ios/libs/glslang/libMachineIndependent.a,
+					/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/ios/libs/glslang/libOGLCompiler.a,
+					/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/ios/libs/glslang/libOSDependent.a,
+					/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/ios/libs/glslang/libSPIRV.a,
+					"/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/ios/libs/glslang/libSPIRV-Tools-opt.a",
+					"/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/ios/libs/glslang/libSPIRV-Tools.a",
+					/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/ios/libs/glslang/libGenericCodeGen.a,
+					"/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/ios/libs/spirv-cross/libspirv-cross-core.a",
+					"/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/ios/libs/spirv-cross/libspirv-cross-glsl.a",
+					"/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/ios/libs/spirv-cross/libspirv-cross-msl.a",
+					/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/ios/libs/libtbb_static.a,
+					/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/ios/libs/libv8_monolith.a,
+					/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/ios/libs/libuv_a.a,
+					"-framework",
+					UIKit,
+					"-framework",
+					AVKit,
+					"-framework",
+					WebKit,
+					"-framework",
+					CoreVideo,
+					"-framework",
+					CoreMotion,
+					"-framework",
+					CFNetwork,
+					"-framework",
+					CoreMedia,
+					"-framework",
+					CoreText,
+					"-framework",
+					CoreGraphics,
+					"-framework",
+					AVFoundation,
+					"-lz",
+					"-framework",
+					OpenGLES,
+					"-framework",
+					JavaScriptCore,
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ty.ta;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SYSTEM_HEADER_SEARCH_PATHS = (
+					/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/ios/include/v8,
+					/Applications/CocosCreator/Creator/3.7.3/CocosCreator.app/Contents/Resources/resources/3d/engine/native/external/ios/include/uv,
+					"$(inherited)",
+				);
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E5FB627E2BC6DDC300D36088 /* Build configuration list for PBXProject "iosdemo2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5FB629A2BC6DDC500D36088 /* Debug */,
+				E5FB629B2BC6DDC500D36088 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5FB629C2BC6DDC500D36088 /* Build configuration list for PBXNativeTarget "iosdemo2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5FB629D2BC6DDC500D36088 /* Debug */,
+				E5FB629E2BC6DDC500D36088 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E5FB627B2BC6DDC300D36088 /* Project object */;
+}
